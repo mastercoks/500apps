@@ -1,0 +1,28 @@
+.navbar-fixed nav.ativado {
+    top: 0;
+}
+
+.desativado {
+  top: 0px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+
+}
+
+@media only screen and (max-width:600px) {
+  .ativado {
+    top: 56px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+}
+@media only screen and (min-width:601px) {
+  .ativado {
+    top: 64px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+}
