@@ -1,6 +1,17 @@
 .navbar-fixed nav {
     top: 0;
 }
+.card {
+    margin-top: 50px;
+}
+
+.page-footer {
+  padding: 0px;
+}
+
+.page-footer .footer-copyright a {
+  margin-left: 10px;
+}
 
 .desativado {
   top: 0px;
