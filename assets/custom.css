@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .banner {
   margin: 0px;
   background-color: #2196f3;
@@ -61,3 +62,44 @@
     transition-timing-function: ease-out;
   }
 }
+=======
+.navbar-fixed nav {
+    top: 0;
+}
+.card {
+    margin-top: 50px;
+}
+
+.page-footer {
+  padding: 0px;
+}
+
+.page-footer .footer-copyright a {
+  margin-left: 10px;
+}
+
+.desativado {
+  top: 0px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+
+}
+
+@media only screen and (max-width:600px) {
+  .ativado {
+    top: 56px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+}
+@media only screen and (min-width:601px) {
+  .ativado {
+    top: 64px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+}
+>>>>>>> gh-pages
