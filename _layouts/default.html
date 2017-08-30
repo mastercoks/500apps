@@ -1,78 +1,19 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="{{ page.lang | default: site.lang | default: "br" }}">
+
   {% include head.html %}
+
   <body>
-    <h1 class="center" id="banner">500 apps</h1>
-    <div class="navbar" id="navbar">
-      <nav id="search-bar" class="hide">
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search" id="label_search"><i class="material-icons">search</i></label>
-              <i class="material-icons" onclick="hide_search()">close</i>
-            </div>
-          </form>
-        </div>
-      </nav>
-      <ul id="menu" class="dropdown-content">
-        <li><a href="#!">Contato</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Sobre</a></li>
-      </ul>
-      <nav id="navbar-menu">
-        <div class="nav-wrapper">
-          <ul class="left hide-on-med-and-up">
-            <li><a class="dropdown-button" href="#!"><i class="material-icons right">menu</i></a></li>
-          </ul>
-          <a href="#!" class="brand-logo center hide" id="logo">500 apps</a>
-          <ul class="right hide-on-small-only">
-            <li><a href="#" onclick="show_search()"><i class="material-icons">search</i></a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre</a></li>
-          </ul>
-          <ul class="right hide-on-med-and-up">
-            <li><a href="#" onclick="show_search()"><i class="material-icons">search</i></a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <a href="teste.html">
-            <img src="assets/full-achemist.png">
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <script type="text/javascript">
-      $(".button-collapse").sideNav();
-      $(window).scroll(function() {
-        if($(this).scrollTop() >=  120) {
-          document.getElementById('navbar').className = "navbar-fixed";
-          //document.getElementById('banner').className = "center hide";
-          document.getElementById('logo').className = "brand-logo center";
-  	    }
-        if($(this).scrollTop() <=  120) {
-          document.getElementById('navbar').className = "navbar";
-          document.getElementById('banner').className = "center";
-          document.getElementById('logo').className = "brand-logo center hide";
-  	    }
+    {% include header.html %}
 
-    	});
-    </script>
-    <script type="text/javascript" src="assets/custom.js"></script>
+
+        {{ content }}
+
+    {% include footer.html %}
+
+    {% include script.html %}
+
   </body>
+
 </html>
