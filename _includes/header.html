@@ -1,0 +1,55 @@
+<header class="site-header" role="banner">
+
+  <div class="center banner">
+    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <h2>{{ site.description }}</h2>
+  </div>
+
+  <div class="navbar" id="navbar">
+
+    <nav id="search-bar" class="hide">
+      <div class="nav-wrapper blue darken-3">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search" id="label_search"><i class="material-icons">search</i></label>
+            <i class="material-icons" onclick="hide_search()">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <ul id="menu" class="dropdown-content">
+      {% for page in site.pages %}
+        {% if page.title %}
+          <li><a href="{{ site.baseurl }}{{ page.permalink }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <nav id="navbar-menu">
+      <div class="nav-wrapper blue darken-3">
+        <div class="container">
+          <ul class="hide-on-small-only">
+            {% for page in site.pages %}
+              {% if page.title %}
+                <li><a href="{{ site.baseurl }}{{ page.permalink }}">{{ page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <ul class="right hide-on-small-only">
+            <li><a href="#!" onclick="show_search()"><i class="material-icons">search</i></a></li>
+          </ul>
+        </div>
+        <ul class="hide-on-med-and-up">
+          <li><a class="dropdown-button" href="#" data-activates="menu"><i class="material-icons right">menu</i></a></li>
+        </ul>
+        <a href="{{ site.baseurl }}{{ page.permalink }}" class="brand-logo center hide" id="logo">{{ page.title }}</a>
+
+        <ul class="right hide-on-med-and-up">
+          <li><a href="#!" onclick="show_search()"><i class="material-icons">search</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

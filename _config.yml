@@ -1,0 +1,17 @@
+
+title: 500apps
+email: contato@500apps.com
+description: "Esse é um site criado para o minicurso sobre criação de sites estáticos utilizando jekyll."
+baseurl: "/500apps"
+url: "http://mastercoks.me"
+facebook_username: mastercoks
+twitter_username: mastercoks
+github_username:  mastercoks
+dev: MasterCoks
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+theme: minima
+plugins:
+  - jekyll-feed
