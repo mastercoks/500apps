@@ -6,11 +6,12 @@ categories:
 tags:
 - puzzle
 - jogos
-Resumo: Aqui vai algum resumo
+resumo: Aqui vai algum resumo
 sistemas:
   Android: link1
   Ios: link2
   Windows Phone: link3
+imagem: test-chamber.png
 layout: post
 ---
 
