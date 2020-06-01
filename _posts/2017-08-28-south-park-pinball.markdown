@@ -1,19 +1,25 @@
 ---
+title: South Park Pinball (3,99)
+date: 2017-08-28 21:41:18 Z
+categories:
+- jogos
+tags:
+- jogos
+- puzzle
 layout: post
-title:  "South Park Pinball (3,99)"
-resumo: "Aqui vai um resumo do jogo. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-date:   2017-08-28 18:41:18 -0300
-categories: jogos
+resumo: Aqui vai um resumo do jogo. Lorem ipsum dolor sit amet, consectetur adipisicing
+  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+  sunt in culpa qui officia deserunt mollit anim id est laborum.
 sistemas:
   Android:
-    - link1
+  - link1
   Ios:
-    - link2
+  - link2
   Windows Phone:
-    - link3
-tags:
-  - jogos
-  - puzzle
+  - link3
 imagem: south-park-pinball.png
 ---
 
